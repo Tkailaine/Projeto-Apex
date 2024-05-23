@@ -118,3 +118,22 @@ function mostrarSlides() {
     slides[indiceSlide - 1].classList.add('ativo');
     setTimeout(mostrarSlides, 3000); // Muda a imagem a cada 3 segundos
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    let indiceRelato = 0;
+    mostrarRelatos();
+
+    function mostrarRelatos() {
+        let relatos = document.querySelectorAll('.relato');
+        for (let i = 0; i < relatos.length; i++) {
+            relatos[i].classList.remove('ativo');
+        }
+        indiceRelato++;
+        if (indiceRelato > relatos.length) {
+            indiceRelato = 1;
+        }
+        relatos[indiceRelato - 1].classList.add('ativo');
+        setTimeout(mostrarRelatos, 4000); // Muda a imagem a cada 4 segundos
+    }
+});
+

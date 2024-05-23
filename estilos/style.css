@@ -42,7 +42,7 @@ CORES:
 
 body{
     font-family: var(--fonte-padrao);
-    background-color: var(--cor5);
+    background-color: var(--cor2);
     color: black;
     text-align: justify;  
     overflow-x: hidden ;
@@ -519,16 +519,19 @@ p{
     width: 100%;
     max-width: 100%;
     overflow: hidden;
+    border-bottom: 2px solid var(--cor1);
 }
 
 .item-slide {
     display: none;
     width: 100%;
+    
 }
 
 .item-slide img {
     width: 100%;
     vertical-align: middle;
+    
 }
 
 .ativo {
@@ -556,3 +559,40 @@ p{
     margin: 15px 5px;
     border: 1px solid var(--cor1);
 }
+
+.relatos-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.relato {
+    display: none;
+    width: 60%;
+    margin: auto;
+    border: 1px solid var(--cor1);
+ 
+    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.315);
+    border-radius: 8px;
+}
+
+.relato img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.ativo {
+    display: block;
+}
+
+@keyframes zoomIn {
+    0% { transform: scale(0.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.relato.ativo {
+    display: block;
+    animation: zoomIn 1s ease;
+}
+

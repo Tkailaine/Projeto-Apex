@@ -124,7 +124,11 @@ width: 40%;
  
 }
 
-@media (min-width: 1024px) and (max-width: 1164px) {
+.relatos-container{
+  display: none;
+}
+
+@media (min-width: 1024px) and (max-width: 1172px) {
   .ocultar{
     display: none;
   }

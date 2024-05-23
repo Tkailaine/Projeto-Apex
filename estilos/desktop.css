@@ -97,5 +97,8 @@ header > nav > ul> li:hover{
   display: none;
 }
 
+.relatos-container{
+  display: none;
+}
 
 
