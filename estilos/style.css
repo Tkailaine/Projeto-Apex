@@ -169,7 +169,7 @@ header> nav{
 
 
 main{ 
-background-color: #0f3f99;
+    background-color: var(--cor2);
     font-size: 1em;
     color: #007BFF;
     font-family: var(--fonte-padrao);
