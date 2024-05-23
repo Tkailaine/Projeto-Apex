@@ -36,6 +36,7 @@ CORES:
 *{
     margin: 0px;
     padding:0px;
+    box-sizing: border-box;
 }
 
 
@@ -43,11 +44,12 @@ body{
     font-family: var(--fonte-padrao);
     background-color: var(--cor5);
     color: black;
-    text-align: justify;
-    overflow-x: hidden ;
-    height: 100vh;
+    text-align: justify;  
     width: 100vw;
-    overflow-x: hidden;
+    height: 100vh;
+    overflow-x: hidden ;
+  
+    
 }
 
 header{
@@ -55,6 +57,7 @@ header{
     font-family: var(--fonte-destaque);
     position: relative;
     z-index: 1000;
+    width: 100vw;
 }
 
 
@@ -168,8 +171,6 @@ header> nav{
 
 
 main{ 
-    width: 100%;
-    height: 100%;
     font-size: 1em;
     color: #007BFF;
     font-family: var(--fonte-padrao);
