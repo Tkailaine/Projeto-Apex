@@ -57,32 +57,28 @@ function currentSlide(n) {
 
 function showSlides(n) {
     let i;
-    if (n > slides.length) {slideIndex = 1}    
-    if (n < 1) {slideIndex = slides.length}
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-
     for (i = 0; i < slides.length; i++) {
         slides[i].classList.remove("slide-in");
         slides[i].classList.remove("slide-out");
     }
-
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-
-    slides[slideIndex-1].style.display = "block";
-    slides[slideIndex-1].classList.add("slide-in");
-    dots[slideIndex-1].className += " active";
-
+    slides[slideIndex - 1].style.display = "block";
+    slides[slideIndex - 1].classList.add("slide-in");
+    dots[slideIndex - 1].className += " active";
+    
     let previousSlide = slideIndex - 2;
     if (previousSlide < 0) {
         previousSlide = slides.length - 1;
     }
     slides[previousSlide].classList.add("slide-out");
 }
-
 
 document.addEventListener('DOMContentLoaded', function() {
     const observerOptions = {

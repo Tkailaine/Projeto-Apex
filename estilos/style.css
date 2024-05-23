@@ -296,22 +296,16 @@ main{
         position: relative;
         width: 60%;
         margin: auto;
-        
     }
-    
     .mySlides {
         display: none;
-        
-       
+        transition: transform 1s ease, opacity 1s ease;
     }
-    
-    .mySlides >img {
+    .mySlides > img {
         vertical-align: middle;
         border: 1px solid var(--cor1);
         box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.205);
-        
     }
-    
     .prev, .next {
         cursor: pointer;
         position: absolute;
@@ -322,67 +316,46 @@ main{
         color: var(--cor1);
         font-weight: bold;
         font-size: 18px;
-
         transition: 0.6s ease;
         border-radius: 50%;
         user-select: none;
-        
     }
-    
     .next {
         right: 0;
         transform: translate(120%, -50%);
-       
     }
-    .prev{transform: translate(-120%, -50%);}
-    
+    .prev {
+        transform: translate(-120%, -50%);
+    }
     .prev:hover, .next:hover {
-        
         color: black;
-        
     }
-    
     .dot {
         cursor: pointer;
         height: 15px;
         width: 15px;
-        margin: 10px 6px 80px ;
+        margin: 10px 6px 80px;
         background-color: #93a1b9;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
     }
-    
     .active, .dot:hover {
         background-color: #0084ff;
     }
-    
-    @keyframes slide-in {
-        from {transform: translateX(100%);}
-        to {transform: translateX(0);}
-    }
-    
-    @keyframes slide-out {
-        from {transform: translateX(0);}
-        to {transform: translateX(-100%);}
-    }
-    
-    @keyframes slide-in {
-        from {transform: translateX(100%);}
-        to {transform: translateX(0);}
-    }
-    
-    @keyframes slide-out {
-        from {transform: translateX(0);}
-        to {transform: translateX(-100%);}
-    }
-    
     .slide-in {
         animation: slide-in 1s forwards;
     }
-    
     .slide-out {
         animation: slide-out 1s forwards;
+    }
+    @keyframes slide-in {
+        from { transform: translateX(100%); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+    }
+    @keyframes slide-out {
+        from { transform: translateX(0); opacity: 1; }
+        to { transform: translateX(-100%); opacity: 0; }
     }
     
     
