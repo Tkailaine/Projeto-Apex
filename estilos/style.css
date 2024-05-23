@@ -173,6 +173,7 @@ background-color: #0f3f99;
     font-size: 1em;
     color: #007BFF;
     font-family: var(--fonte-padrao);
+    overflow-x: hidden;
     
 }
 
