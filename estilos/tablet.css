@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+.saudacoes{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.saudacoes> p{
+    font-family: var(--fonte-padrao);
+    color: black;
+    line-height: 1.8em;
+    margin-top: 20px;
+    margin: 20px 15px 0px 10px;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 1s ease, transform 1s ease;
+
+}
+
+.saudacoes > p.slideInRight {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.van{
+
+    background-image: url(../imagens/van.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350;
+   
+  
+    border-radius: 10px;
+
+}
+.slideshow-container {
+    display: none;}
+
+.dot{
+        display: none;
+    }
+   
+    
+.sessaoservicos{
+    display: flex;
+}
+
+.txt-missao{
+    width: 95%;
+    text-align: center;
+}
+
+.galeria{
+    display: none;
+}
+
+

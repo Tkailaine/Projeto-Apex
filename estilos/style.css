@@ -1,0 +1,594 @@
+@charset "UTF-8";
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700; 1.900&display=swap');
+
+@font-face{
+    font-family: 'android';
+    src: url('../fontes/idroid.otf') format(opentype);
+}
+
+/*
+CORES:
+
+#00E07B - VERDE PRINCIPAL
+#2E8B62 - VERDE ESCURO
+#1EB672 - VERDE MEIO TOM
+
+*/
+
+:root{
+    --fonte-padrao: Roboto, Tahoma, Geneva, Verdana, sans-serif;
+    --fonte-destaque: Archivo, sans-serif;
+    --fonte-texto: Tenor Sans, sans-serif;
+
+    --cor1: #007BFF;
+    --cor2: #FFFFFF;
+    --cor3: #ff7f00;
+    --cor4: #3d6a99;
+    --cor5: #3d5166;
+}
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+
+body{
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor2);
+    color: black;
+    text-align: justify;
+    overflow-x: hidden ;
+    height: 100vh;
+    width: 100vw;
+}
+
+header{
+    background-image: linear-gradient(45deg,white 20%, rgb(238, 233, 233));
+    font-family: var(--fonte-destaque);
+    position: relative;
+    z-index: 1000;
+}
+
+
+header> nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0px 30px 0px; 
+    font-family: var(--fonte-destaque);
+    font-weight: 600;
+    font-size: 1em;
+
+}
+
+
+.desktop{display: none;}
+
+.imenu {
+    z-index: 999;
+    cursor: pointer;
+  }
+
+.imenu span {
+    display: block;
+  width: 30px;
+  height: 3px;
+  background-color:  #000000;
+  margin-bottom: 5px;
+  
+  }
+
+
+
+.lateral a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.lateral{
+
+    list-style-type: none;
+}
+
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #122A44;
+    transition: left 0.3s ease;
+    z-index: 999;
+  }
+  
+  .menu-lateral.open {
+    left: 0;
+    z-index: 999; 
+  }
+  
+  .menu-lateral ul {
+    position: absolute;
+    top: 50%;
+    list-style: none;
+    padding: 0;
+    transform: translate(0%,-50%);
+    margin-left: 20px;
+  }
+  
+  .menu-lateral ul li {
+    padding: 15px;
+    font-family: var(--font-principal);
+    font-size: 1.5em;
+    text-align: left;
+    
+  }
+  
+
+  .menu-lateral ul li a:hover {
+    color: var(--cor1);
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    cursor: pointer;
+    color: #ffff;
+  }
+
+
+.btn-contato{
+    text-align: center;
+    height: 40px;
+    width: 100px;
+    font-weight: 600;
+    color: var(--cor1);
+    border: 1px solid var(--cor1);
+    border-radius: 5px;
+   
+    
+}
+
+.btn-contato:hover{
+    color: white;
+    background-color: #007BFF;
+
+    transition-duration: 0.5s;
+    
+}
+
+
+
+main{ 
+    height: 100%;
+    font-size: 1em;
+    color: #007BFF;
+    font-family: var(--fonte-padrao);
+    
+}
+
+.bandeira{
+    position: relative;
+    height: 500px;
+    background-image: url(../imagens/eletricista3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.bandeira > h1{
+    position: absolute;
+    font-family: var(--fonte-padrao);
+    color: white;
+    font-size: 1.5em;
+    top: 50%;
+    left: 50%;
+    width: 260px;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+
+.bandeira > p{
+    display: none;
+    position: absolute;
+    font-family: var(--fonte-padrao);
+    color: white;
+    width: 450px;
+    left: 20px;
+    top: 180px;
+    line-height: 1.5em;
+}
+
+
+
+.btn-servicos{
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    background-color: var(--cor1);
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.75em;
+    cursor: pointer;
+    transform: translate(-110%,-50%);
+    margin-top: 90px;
+  
+}
+
+.btn-servicos:hover{
+    box-shadow: 2px 2px 7px rgba(255, 255, 255, 0.589);
+    transition-duration: 0.5s;
+}
+
+.btn-contato2{
+    position: absolute;
+    text-align: center;
+    height: 40px;
+    width: 100px;
+    font-weight: 600;
+    color: var(--cor1);
+    border: 1px solid var(--cor1);
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 90px 0px 0px 70px;
+        
+    }
+    
+
+.btn-contato2:hover{
+        color: white;
+        background-color: #007BFF;
+        box-shadow: 2px 2px 7px rgba(255, 255, 255, 0.589);
+        transition-duration: 0.5s;
+        
+    }
+
+    .saudacoes{
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .txt{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .saudacoes> .txt> p{
+        font-family: var(--fonte-texto);
+        font-weight: 800;
+        color: black;
+        width: 400px;
+        line-height: 1.8em;
+        margin-top: 20px;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: opacity 1s ease, transform 1s ease;
+    
+    }
+
+    .saudacoes > .txt >  p.slideInRight {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .van{
+   
+        background-image: url(../imagens/van.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 350px;
+        width: 400px;
+        border-radius: 10px;
+
+    }
+
+    .slideshow-container {
+        position: relative;
+        width: 350px;
+        margin: auto;
+        
+        
+       
+        
+    }
+    
+    .mySlides {
+        display: none;
+        
+       
+    }
+    
+    .mySlides >img {
+        vertical-align: middle;
+        border: 1px solid var(--cor1);
+        box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.205);
+        
+    }
+    
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: 35px;
+        height: 30px;
+        text-align: center;
+        color: var(--cor1);
+        font-weight: bold;
+        font-size: 18px;
+
+        transition: 0.6s ease;
+        border-radius: 50%;
+        user-select: none;
+        
+    }
+    
+    .next {
+        right: 0;
+        transform: translate(120%, -50%);
+       
+    }
+    .prev{transform: translate(-120%, -50%);}
+    
+    .prev:hover, .next:hover {
+        
+        color: black;
+        
+    }
+    
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 10px 6px 80px ;
+        background-color: #93a1b9;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+        background-color: #0084ff;
+    }
+    
+    @keyframes slide-in {
+        from {transform: translateX(100%);}
+        to {transform: translateX(0);}
+    }
+    
+    @keyframes slide-out {
+        from {transform: translateX(0);}
+        to {transform: translateX(-100%);}
+    }
+    
+    @keyframes slide-in {
+        from {transform: translateX(100%);}
+        to {transform: translateX(0);}
+    }
+    
+    @keyframes slide-out {
+        from {transform: translateX(0);}
+        to {transform: translateX(-100%);}
+    }
+    
+    .slide-in {
+        animation: slide-in 1s forwards;
+    }
+    
+    .slide-out {
+        animation: slide-out 1s forwards;
+    }
+    
+    
+   
+
+    .sessaoservicos{
+        display: none;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width:100%;
+        margin-bottom: 20px;
+    }
+
+    .servico{
+        margin: 0px 5px 10px;
+        width: 250px;
+        height: 240px;
+        border-radius: 10px;
+        overflow: hidden;
+        border: 1px solid var(--cor1);
+        
+    }
+
+    .servico > img{
+        border-radius: 10px ;
+        
+    }
+
+    .decoracao{
+        display: block;
+        width: 100px;
+        height: 3px;
+        background-color: #007BFF;
+        margin: 50px auto 30px auto ;
+    }
+   
+
+
+img{width: 100%;}
+
+
+.bandeira2{
+    background-image: url(../imagens/eletricista1.jpg);
+    position: relative;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    border-top: 2px solid var(--cor1);
+}
+
+
+
+.bandeira2 > h1{
+    position: absolute;
+    font-family: var(--fonte-padrao);
+    color: white;
+    font-size: 1.5em;
+    top: 50%;
+    left: 50%;
+    width: 160px;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    
+}
+
+.bandeira2 > p{
+    display: inline-block;
+    position: absolute;
+    font-family: var(--fonte-padrao);
+    color: white;
+    width: 450px;
+    left: 50%;
+    top:55%;
+    transform: translate(-40%,0%);
+    line-height: 1.5em;
+}
+
+.quem-somos {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+   
+}
+
+
+
+.missao, .valores .valor {
+    margin: 20px auto;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.missao.visivel, .valor.visivel {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.txt-missao{
+    width: 400px; 
+    margin: auto;
+}
+
+.valores {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: auto;
+
+
+}
+
+.valor {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto ;
+
+  
+    
+}
+
+.valor-icone {
+    width: 50px;
+    height: 50px;
+    background-color: #FFFFFF;
+}
+
+
+
+h2{
+    color: black;
+}
+
+p{
+    color: #000000;
+    font-family: var(--fonte-texto);
+    font-weight: 600;
+}
+
+.missao-titulo{
+   text-align: center;
+   color: var(--cor1);
+}
+
+.missao-texto{
+    margin-top: 10px;
+    width: 300px;
+    margin: auto; 
+}
+
+.missao{
+    background-color: #007BFF;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.container-slideshow {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.item-slide {
+    display: none;
+    width: 100%;
+}
+
+.item-slide img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.ativo {
+    display: block;
+}
+
+@keyframes deslizamento {
+    0% {transform: translateX(100%);}
+    100% {transform: translateX(0);}
+}
+
+.item-slide.ativo {
+    animation: deslizamento 1s ease-in-out;
+}
+
+.galeria{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+}
+.fgaleria{
+    width: 250px;
+    margin: 15px 5px;
+    border: 1px solid var(--cor1);
+}
