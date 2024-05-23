@@ -265,7 +265,7 @@ main{
         color: black;
         width: 300px;
         line-height: 1.8em;
-        margin-top: 20px;
+        margin-top: 30px;
         margin: 30px auto;
         opacity: 0;
         transform: translateX(100%);
@@ -292,7 +292,7 @@ main{
 
     .slideshow-container {
         position: relative;
-        width: 50%;
+        width: 60%;
         margin: auto;
         
     }
