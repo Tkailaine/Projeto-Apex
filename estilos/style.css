@@ -160,7 +160,6 @@ header> nav{
 .btn-contato:hover{
     color: white;
     background-color: #007BFF;
-
     transition-duration: 0.5s;
     
 }
@@ -168,6 +167,7 @@ header> nav{
 
 
 main{ 
+    width: 100%;
     height: 100%;
     font-size: 1em;
     color: #007BFF;
@@ -177,6 +177,7 @@ main{
 
 .bandeira{
     position: relative;
+    width: 100%;
     height: 500px;
     background-image: url(../imagens/eletricista3.jpg);
     background-position: center;
@@ -193,17 +194,6 @@ main{
     width: 260px;
     text-align: center;
     transform: translate(-50%,-50%);
-}
-
-.bandeira > p{
-    display: none;
-    position: absolute;
-    font-family: var(--fonte-padrao);
-    color: white;
-    width: 450px;
-    left: 20px;
-    top: 180px;
-    line-height: 1.5em;
 }
 
 
@@ -273,9 +263,10 @@ main{
         font-family: var(--fonte-texto);
         font-weight: 800;
         color: black;
-        width: 350px;
+        width: 300px;
         line-height: 1.8em;
         margin-top: 20px;
+        margin: 30px auto;
         opacity: 0;
         transform: translateX(100%);
         transition: opacity 1s ease, transform 1s ease;
@@ -300,9 +291,9 @@ main{
     }
 
     .slideshow-container {
-        background-color: #007BFF;
+        
         position: relative;
-        width: 280px;
+        width: 50%;
         margin: auto;
         
         

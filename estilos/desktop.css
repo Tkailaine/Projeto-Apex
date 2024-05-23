@@ -45,6 +45,23 @@ header > nav > ul> li:hover{
 .dot{
       display: none;
   }
+
+.van{
+  
+  background-image: url(../imagens/van.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 500px;
+  border-radius: 10px;
+
+}
+.saudacoes> .txt> p{
+  width: 350px;
+  
+
+}
  
   
 .sessaoservicos{
@@ -79,5 +96,6 @@ header > nav > ul> li:hover{
 .ocultar{
   display: none;
 }
+
 
 

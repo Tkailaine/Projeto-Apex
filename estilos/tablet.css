@@ -1,24 +1,14 @@
 @charset "UTF-8";
 
 .saudacoes{
-    margin-top: 20px;
+    margin: 20px 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    gap: 10px;
 }
 
-.saudacoes> p{
-    font-family: var(--fonte-padrao);
-    color: black;
-    line-height: 1.8em;
-    margin-top: 20px;
-    margin: 20px 15px 0px 10px;
-    opacity: 0;
-    transform: translateX(100%);
-    transition: opacity 1s ease, transform 1s ease;
-
-}
 
 .saudacoes > p.slideInRight {
     opacity: 1;
@@ -32,9 +22,9 @@
     background-position: center;
     background-repeat: no-repeat;
     height: 350;
-   
-  
+    width: 350px;
     border-radius: 10px;
+    
 
 }
 .slideshow-container {
