@@ -155,7 +155,7 @@ header> nav{
     color: var(--cor1);
     border: 1px solid var(--cor1);
     border-radius: 5px;
-   
+   cursor: pointer;
     
 }
 
@@ -163,6 +163,7 @@ header> nav{
     color: white;
     background-color: #007BFF;
     transition-duration: 0.5s;
+    
     
 }
 
@@ -236,6 +237,7 @@ main{
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 90px 0px 0px 70px;
+    cursor: pointer;
         
     }
     
@@ -596,3 +598,49 @@ p{
     animation: zoomIn 1s ease;
 }
 
+
+footer{
+  
+    background-color: rgb(246, 246, 247);
+    display: flex;
+    margin-top: 150px;
+   
+}
+.sessao-footer{
+    margin-top: 20px;
+    display: flex;
+    margin-left: 20px;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    
+    
+}
+
+.sessao-footer  h3,li, p ,a {
+    margin-bottom: 10px;
+   
+}
+
+.sessao-footer div{
+    margin-bottom: 15px;
+}
+
+footer ul, a{
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--cor4);
+    font-weight: 500;
+}
+.endereco{
+    font-size: 1em;
+    margin-left: 20px;
+}
+
+h3{
+    color: var(--cor5);
+}
+
+.links-uteis > li > a:hover{
+    color: var(--cor1);
+}
