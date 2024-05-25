@@ -170,7 +170,7 @@ header> nav{
 
 
 main{ 
-    background-color: var(--cor2);
+    background-color: #ffffff;
     font-size: 1em;
     color: #007BFF;
     font-family: var(--fonte-padrao);
@@ -603,14 +603,14 @@ p{
 footer{
   
     background-color: rgb(246, 246, 247);
-    display: flex;
+    
     margin-top: 150px;
    
 }
 .sessao-footer{
     margin-top: 20px;
     display: flex;
-    margin-left: 20px;
+    margin-left: 5%;
     justify-content: space-between;
     flex-direction: column;
     width: 100%;
@@ -644,4 +644,12 @@ h3{
 
 .links-uteis > li > a:hover{
     color: var(--cor1);
+}
+
+.divisoria{
+    display: block;
+    width: 90%;
+    height: 1px;
+    background-color: #000000;
+    margin: 10px auto;
 }
