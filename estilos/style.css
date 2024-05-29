@@ -39,7 +39,9 @@ CORES:
     box-sizing: border-box;
 }
 
-
+body, html{
+    overflow-x: hidden;
+}
 body{
     font-family: var(--fonte-padrao);
     background-color: var(--cor2);
